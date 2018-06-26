@@ -2,7 +2,7 @@ FROM maven:3.5-jdk-8-alpine AS build
 LABEL Author="chenchuxin <idesireccx@gmail.com>"
 WORKDIR /src
 RUN apk add --no-cache git \
-    && git clone -b develop git@github.com:xmeng1/incubator-dubbo-ops.git \
+    && git clone -b develop https://github.com/xmeng1/incubator-dubbo-ops.git \
     && cd incubator-dubbo-ops \
     && mvn package -Dmaven.test.skip=true
 
