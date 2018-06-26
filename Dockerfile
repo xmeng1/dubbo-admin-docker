@@ -8,7 +8,7 @@ RUN apk add --no-cache git \
 
 # timezone    
 RUN apk add -U tzdata \
-    && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    && cp /usr/share/zoneinfo/Europe/London /etc/localtime
 
 FROM tomcat:9-jre8-alpine
 # timezone
