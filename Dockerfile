@@ -18,4 +18,4 @@ ARG version=2.0.0
 ARG adminVersion=0.0.1-SNAPSHOT
 RUN rm -rf ROOT
 COPY --from=build /src/incubator-dubbo-ops/dubbo-admin/target/dubbo-admin-${adminVersion}.war .
-RUN mv dubbo-admin-${version}.war ROOT.war
+RUN mv dubbo-admin-${adminVersion}.war ROOT.war
